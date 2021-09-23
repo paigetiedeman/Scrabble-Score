@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System;
-using Scrabble;
+using Scrabble.Models;
 
-namespace Scrabble.Tests
+namespace Scrabble.Models.Tests
 {
   [TestClass]
   public class ScrabbleTests
@@ -39,9 +39,12 @@ namespace Scrabble.Tests
       Assert.AreEqual(10, letters['Q']);
       Assert.AreEqual(10, letters['Z']);
     }
+  [TestMethod]
+    public void scrabbleScore_ReturnScoreOfWord_Returns2()
+    {
+      Assert.AreEqual(2, Score.ScrabbleScore("to"));
+    }
   }
 }
 
-// input:string word
-// output: int score
 
