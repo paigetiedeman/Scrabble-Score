@@ -1,29 +1,42 @@
-# Project Name
+# Scrabble Score
 
-#### This is a console application that..
+#### A console application to get your Scrabble word score.
 
-#### _By Paige Tiedeman_
+#### _By Paige Tiedeman & Anthony McRae_
 
 ## Technologies Used
 
 * C#
-* .NET
-* Unit Testing
+* .NET 5.0
+* MSTest
 
 
 ## Description
 
-This console application uses input..
+This console application uses input words to display the Scrabble score of that word based on below rules:
+
+```
+A, E, I, O, U, L, N, R, S, T       1
+D, G                               2
+B, C, M, P                         3
+F, H, V, W, Y                      4
+K                                  5
+J, X                               8
+Q, Z                               10
+```
 
 ## Installation Requirements
 
 * _Clone or download the zip file of this repository to your desktop_
+* _Open in a text editor_
 * _Commit and push your .gitignore file to your repo_
+* _Make sure .NET 5.0 is installed_
 * _Run `$ dotnet test` to see the passed tests_
-* _Run `$ dotnet run` to start the console application_
 
 ## Steps To Use
-* _Enter in _
+* _In your terminal navigate into Scrabble-Score/Scrabble/ _
+* _Run `$ dotnet run` to start the console application_
+* _Follow command prompts and enter a word_
 
 ## Known Bugs
 
@@ -33,8 +46,9 @@ This console application uses input..
 
 _[MIT](https://opensource.org/licenses/MIT)_  
 
-Copyright (c) 2021 Paige Tiedeman
+Copyright (c) 2021 Paige Tiedeman & Anthony McRae
 
 ## Contact Information
 
 _Paige Tiedeman @ github.com/paigetiedeman_
+_Anthony McRae_
