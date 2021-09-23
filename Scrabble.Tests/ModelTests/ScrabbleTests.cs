@@ -27,9 +27,9 @@ namespace Scrabble.Tests
     [TestMethod]
     public void Dictionary_ReturnsScoreOfLetters_Number2()
     {
-        Dictionary<char, int> letters = new Dictionary<char, int>(){{'D', 2}, {'G', 2}};
-        Assert.AreEqual(2,letters['D']);
-        Assert.AreEqual(2,letters['G']);
+      Dictionary<char, int> letters = new Dictionary<char, int>(){{'D', 2}, {'G', 2}};
+      Assert.AreEqual(2,letters['D']);
+      Assert.AreEqual(2,letters['G']);
     }
     [TestMethod]
     public void Dictionary_ReturnsScoreOfLetters_Number3()
@@ -40,16 +40,39 @@ namespace Scrabble.Tests
       Assert.AreEqual(3, letters['M']);
       Assert.AreEqual(3, letters['P']);
     }
+    [TestMethod]
+    public void Dictionary_ReturnsScoreOfLetters_Number4()
+    {
+      Dictionary<char, int> letters = new Dictionary<char, int>(){{'F', 4}, {'H', 4}, {'V', 4}, {'W', 4}, {'Y', 4}};
+      Assert.AreEqual(4, letters['F']);
+      Assert.AreEqual(4, letters['H']);
+      Assert.AreEqual(4, letters['V']);
+      Assert.AreEqual(4, letters['W']);
+      Assert.AreEqual(4, letters['Y']);
+    }
+    [TestMethod]
+    public void Dictionary_ReturnsScoreOfLetters_Number5()
+    {
+      Dictionary<char, int> letters = new Dictionary<char, int>(){{'K', 5}};
+      Assert.AreEqual(5, letters['K']);
+    }
+    [TestMethod]
+    public void Dictionary_ReturnsScoreOfLetters_Number8()
+    {
+      Dictionary<char, int> letters = new Dictionary<char, int>(){{'J', 8}, {'X', 8}};
+      Assert.AreEqual(8, letters['J']);
+      Assert.AreEqual(8, letters['X']);
+    }
+    [TestMethod]
+    public void Dictionary_ReturnsScoreOfLetters_Number10()
+    {
+      Dictionary<char, int> letters = new Dictionary<char, int>(){{'Q', 10}, {'Z', 10}};
+      Assert.AreEqual(10, letters['Q']);
+      Assert.AreEqual(10, letters['Z']);
+    }
   }
 }
 
-
 // input:string word
 // output: int score
-// A, E, I, O, U, L, N, R, S, T       1
-// D, G                               2
-// B, C, M, P                         3
-// F, H, V, W, Y                      4
-// K                                  5
-// J, X                               8
-// Q, Z                               10
+
